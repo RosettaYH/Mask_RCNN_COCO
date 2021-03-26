@@ -117,7 +117,7 @@ def get_result(image, model_list, show_image=False):
 
         r = results[0]
         if (show_image):
-            visualize.display_instances(img1, r['rois'], r['masks'], r['class_ids'], class_names , r['scores'], ax=get_ax(1), title="Predictions")
+            visualize.display_instances(img1, r['rois'], r['masks'], r['class_ids'], class_names, r['scores'], ax=get_ax(1), title="Predictions")
 
         final_result = {}
         for i in range(len(r["class_ids"])):
