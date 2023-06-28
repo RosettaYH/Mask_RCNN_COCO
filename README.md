@@ -9,5 +9,5 @@ To address the limited availability of data, we decided to divide the 50 food ca
 
 ### Results
 All results below are from the initial detection.
-![Image](imgs/macrons.png)
-![Image](imgs/dumplings.png)
+
+<img src="imgs/dumplings.png" width="250"><img src="imgs/macarons.png" width="250">
