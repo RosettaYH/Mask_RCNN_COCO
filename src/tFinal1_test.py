@@ -1,3 +1,7 @@
+"""
+Mask R-CNN Coco
+Run the model on test images
+"""
 import skimage
 import tFinal1_model
 

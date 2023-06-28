@@ -1,19 +1,10 @@
-
-# Mask R-CNN - Inspect tFinl1 Trained Model
-#
-# Code and visualizations to test, debug, and evaluate the Mask R-CNN model.
-
+"""
+Mask R-CNN - Inspect Trained Model
+"""
 import os
 import sys
-import random
-import math
-import re
-import time
-import numpy as np
 import tensorflow as tf
-import matplotlib
 import matplotlib.pyplot as plt
-import matplotlib.patches as patches
 from termcolor import colored
 
 # Root directory of the project
@@ -21,20 +12,10 @@ ROOT_DIR = os.path.abspath("../")
 
 # Import Mask RCNN
 sys.path.append(ROOT_DIR)
-from mrcnn import utils
 from mrcnn import visualize
-from mrcnn.visualize import display_images
 import mrcnn.model as modellib
-from mrcnn.model import log
 
-from src import tFinal1_group0
-from src import tFinal1_group1
-from src import tFinal1_group2
-from src import tFinal1_group3
-from src import tFinal1_group4
-from src import tFinal1_group5
-from src import tFinal1_group6
-from src import tFinal1_group7
+from src import tFinal1_group0, tFinal1_group1, tFinal1_group2, tFinal1_group3, tFinal1_group4, tFinal1_group5, tFinal1_group6, tFinal1_group7
 
 
 def load_models():
@@ -75,7 +56,7 @@ def load_models():
         model_group5 = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config_list[5])
         model_group6 = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config_list[6])
         model_group7 = modellib.MaskRCNN(mode="inference", model_dir=MODEL_DIR, config=config_list[7])
-    model_list = [model_group0, model_group1, model_group2, model_group3, model_group4, model_group6, model_group6, model_group7]
+    model_list = [model_group0, model_group1, model_group2, model_group3, model_group4, model_group5, model_group6, model_group7]
     
     for i in range(len(model_list)):
         print("Loading weights ", weights_path_list[i])
